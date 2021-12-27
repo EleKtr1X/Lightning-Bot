@@ -21,6 +21,7 @@ export default {
 			type: 'STRING',
 		},
 	],
+	guildOnly: true,
 	async execute(interaction) {
 		const embed = new MessageEmbed()
 			.setColor('#0099ff')

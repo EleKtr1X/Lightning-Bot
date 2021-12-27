@@ -4,6 +4,7 @@ import { MessageEmbed } from 'discord.js';
 export default {
 	name: 'serverinfo',
 	description: 'Gets information on the current server.',
+	guildOnly: true,
 	async execute(interaction) {
 		const guild = interaction.guild;
 		const owner = await guild.fetchOwner();
