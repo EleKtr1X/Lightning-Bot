@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "outDir": "./dist",
+    "strict": false,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "paths": {
+      "#src/*": ["./src/*"],
+      "#lib/*": ["./lib/*"],
+      "#structures/*": ["./src/structures/*"],
+      "#interfaces/*": ["./lib/interfaces/*"],
+      "#constants/*": ["./src/constants/*"],
+      "#models/*": ["./src/models/*"],
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
