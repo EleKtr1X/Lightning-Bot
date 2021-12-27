@@ -25,6 +25,6 @@ export interface Option {
 	required: boolean;
 	min_value: number;
 	max_value: number;
-	choices: ApplicationCommandOptionChoice;
+	choices: ApplicationCommandOptionChoice[];
 	autocomplete: boolean;
 }
