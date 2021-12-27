@@ -5,9 +5,9 @@ import { version } from '#constants/index';
 const { Events } = Constants;
 
 export default {
-	name: Events.GUILD_CREATE,
-	once: true,
-	async execute(_, client) {
-		client.user.setActivity(`${client.guilds.cache.size} servers | v${version}`, { type: 'WATCHING' });
-	},
+  name: Events.GUILD_CREATE,
+  once: true,
+  async execute(_, client) {
+    client.user.setActivity(`${client.guilds.cache.size} servers | v${version}`, { type: 'WATCHING' });
+  },
 } as Event<'guildCreate'>;

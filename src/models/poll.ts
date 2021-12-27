@@ -17,12 +17,12 @@ type PollStatic = typeof Model & {
 }
 
 export function PollFactory(sequelize: Sequelize): PollStatic {
-	return <PollStatic>sequelize.define('poll', {
-		message: {
-			type: DataTypes.STRING,
-			unique: true,
-		},
-		buttons: DataTypes.JSON,
-		votes: DataTypes.JSON,
-	});
+  return <PollStatic>sequelize.define('poll', {
+    message: {
+      type: DataTypes.STRING,
+      unique: true,
+    },
+    buttons: DataTypes.JSON,
+    votes: DataTypes.JSON,
+  });
 }
