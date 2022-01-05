@@ -14,7 +14,7 @@ export default {
     },
     {
       name: 'size',
-      type: 'INTEGER',
+      type: 'NUMBER',
       description: 'The size of the user\'s avatar',
       required: false,
       choices: [
