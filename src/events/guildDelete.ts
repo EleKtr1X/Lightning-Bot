@@ -6,7 +6,7 @@ const { Events } = Constants;
 
 export default {
   name: Events.GUILD_DELETE,
-  once: true,
+  once: false,
   async execute(_, client) {
     client.user.setActivity(`${client.guilds.cache.size} servers | v${version}`, { type: 'WATCHING' });
   },
