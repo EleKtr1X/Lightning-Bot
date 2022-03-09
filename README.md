@@ -1,4 +1,4 @@
-# LightningBot
+# Lightning Bot
 
 This is a regular Discord bot made using discord.js and Typescript, with features such as:
 
