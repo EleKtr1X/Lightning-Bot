@@ -1,4 +1,4 @@
-# LightningBot
+# Lightning Bot
 
 This is a regular Discord bot made using discord.js and Typescript, with features such as:
 
@@ -8,6 +8,6 @@ This is a regular Discord bot made using discord.js and Typescript, with feature
 * A... dictionary.
 * And much more!
 
-[Invite Lightning Bot](https://discord.com/oauth2/authorize?client_id=589803927885578261&scope=bot)
+[Invite Lightning Bot](https://discord.com/api/oauth2/authorize?client_id=589803927885578261&permissions=3078&scope=applications.commands%20bot)
 
 [Support Server](https://discord.gg/dqV3ypQ)
