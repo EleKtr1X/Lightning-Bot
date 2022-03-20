@@ -1,4 +1,4 @@
-import type { GuildMember } from 'discord.js';
+import type { GuildMember, Permissions } from 'discord.js';
 import type { Command } from '#interfaces/LightningBot';
 
 export default {
@@ -27,6 +27,17 @@ export default {
   guildOnly: true,
   async execute(interaction) {
     const member = interaction.options.getMember('member') as GuildMember;
+    if (!(interaction.guild.me.permissions.has('KICK_MEMBERS'))) {
+      return await interaction.reply({
+        content: 'I do not have the **Kick Members** permission.',
+      });
+    }
+
+    if (!((interaction.member.permissions as Permissions).has('KICK_MEMBERS'))) {
+      return await interaction.reply({
+        content: 'You do not have the **Kick Members** permission.',
+      });
+    }
     if (member.id == (interaction.member as GuildMember).id) {
       return interaction.reply({
         content: 'You can\'t kick yourself!',
